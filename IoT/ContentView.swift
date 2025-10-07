@@ -54,6 +54,8 @@ struct ContentView: View {
         switch tech.name {
         case "CoreBluetooth":
             CoreBluetoothView()
+        case "MQTT":
+            MQTTView()
         default:
             IoTDetailView(tech: tech)
         }
